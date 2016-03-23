@@ -1,71 +1,8 @@
-body
-  background-color: $bg-color
-  font-size: 14px
-  line-height: 1.6
-  font-family: 'Fira Sans', sans-serif
-  color: $accent-color
-  -webkit-font-smoothing: antialiased
-  -webkit-text-size-adjust: 100%
-
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"]
-  display: inline-block
-  height: 38px
-  padding: 0 30px
-  color: #555
-  text-align: center
-  font-size: 11px
-  font-weight: 600
-  line-height: 38px
-  letter-spacing: .1rem
-  text-transform: uppercase
-  text-decoration: none
-  white-space: nowrap
-  background-color: transparent
-  border-radius: 4px
-  border: 1px solid #bbb
-  cursor: pointer
-  box-sizing: border-box
-
-  &:hover,
-  &:active,
-  &:focus
-    color: #333
-    border-color: #888
-    outline: 0
-
-a
-  color: #0074D9
-  text-decoration: none
-  outline: 0
-
-  &:hover,
-  &:focus
-    color: lighten(#0074D9, 20%)
-
-::selection
-  background: #FFF498
-
-::-moz-selection
-  background: #FFF498
-
-img::selection
-  background: transparent
-
-img::-moz-selection
-  background: transparent
-
-body
-  -webkit-tap-highlight-color: #FFF498
-
-//	Headings
+//	Typography
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6
-  color: #222
+  color: $accent-color
   font-weight: bold
 
 .gigantic
@@ -95,7 +32,6 @@ h1, h2, h3, h4, h5, h6
   line-height: 1.2
 
 
-// Basic Text Style
 
 p
   margin: 0 0 20px 0
@@ -112,3 +48,51 @@ hr
   clear: both
   margin: 10px 0 30px
   height: 0
+
+
+
+// Links
+
+a
+  color: $link-color
+  text-decoration: none
+  outline: 0
+
+a:hover, a:focus
+  color: lighten($link-color, 20%)
+
+
+
+// Selection colors (easy to forget)
+
+::selection
+  background: $selection-color
+
+::-moz-selection
+  background: $selection-color
+
+img::selection
+  background: transparent
+
+img::-moz-selection
+  background: transparent
+
+body
+  -webkit-tap-highlight-color: $selection-color
+
+
+
+// Basic Styles
+
+html,
+body
+  min-height: 100vh
+
+body
+  background: $bg-color
+  font-size: 14px
+  line-height: 1.6
+  font-family: 'Fira Sans', sans-serif
+  color: $text-color
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100
