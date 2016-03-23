@@ -1,2 +1,26 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+    li: a(href="#youtube") YouTube
+    li: a(href="#mentoring") Mentoring
+    li: a(href="#articles") Articles
+    li: a(href="#vines") Vines
+    li: a(href="#design") Design
+    li: a(href="#notes") Notes
+    li: a(href="#contact") Contact
+
+.mobile-nav.is-open
+  +nav-content()
+
 header
-  h1.logo Alessandro Giordo
+  .header-position
+    h1.logo Alessandro Giordo
+
+    nav.site-nav
+      +nav-content()
+        
+
+    a(href="mailto:bovas85@gmail.com?subject=Hi").email-link +email me
+    
+    .mobile-nav-toggle: span
+      
