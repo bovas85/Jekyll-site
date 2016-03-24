@@ -4,7 +4,7 @@ mixin nav-content()
     li: a(href="#youtube") YouTube
     li: a(href="#mentoring") Mentoring
     li: a(href="#articles") Articles
-    li: a(href="#vines") Vines
+    li: a(href="#vine") Vine
     li: a(href="#design") Design
     li: a(href="#notes") Notes
     li: a(href="#contact") Contact
@@ -14,13 +14,11 @@ mixin nav-content()
 
 header
   .header-position
-    h1.logo Alessandro Giordo
-
+    h1.logo Travis Neilson
+    
     nav.site-nav
       +nav-content()
-        
-
-    a(href="mailto:bovas85@gmail.com?subject=Hi").email-link +email me
+    
+    a(href="mailto:travisneilson@gmail.com").email-link +email me
     
     .mobile-nav-toggle: span
-      
